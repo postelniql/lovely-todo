@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lovely-todo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lovely-todo
+  template:
+    metadata:
+      labels:
+        app: lovely-todo
+    spec:
+      containers:
+        - name: lovely-todo
+          image: pingust/lovely-todo:latest
