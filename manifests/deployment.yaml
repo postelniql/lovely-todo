@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: lovely-todo
-          image: pingust/lovely-todo:latest
+          image: pingust/todo:latest
